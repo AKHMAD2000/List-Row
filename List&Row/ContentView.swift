@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 30) {
+            NavigationLink(destination: SecondView()) {
+                Text("1st task")
+            }
+            NavigationLink(destination: ButtonPlay()) {
+                Text("2st task")
+                }
+            }
+            .navigationTitle("Tasks")
+        }
     }
 }
 

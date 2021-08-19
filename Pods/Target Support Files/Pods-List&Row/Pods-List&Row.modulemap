@@ -1,0 +1,6 @@
+framework module Pods_List_Row {
+  umbrella header "Pods-List&Row-umbrella.h"
+
+  export *
+  module * { export * }
+}
